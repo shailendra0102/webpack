@@ -1,0 +1,35 @@
+# code splitting
+There are three general approaches to code splitting available:
+- Entry Points: Manually split code using entry configuration.
+- Prevent Duplication: Use the SplitChunksPlugin to dedupe and split chunks.
+- Dynamic Imports: Split code via inline function calls within modules.
+
+## Entry Points
+```const path = require('path');
+
+module.exports = {
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+    another: './src/another-module.js'
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+}; 
+```
+
+## Problems: 
+- manual splitting
+- code duplication amongs entry chunks.
+
+## Prevent Duplication
+ ```
+   optimization: {
+     splitChunks: {
+       chunks: 'all'
+     }
+   }
+ ```
+

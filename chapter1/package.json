@@ -1,0 +1,38 @@
+{
+  "name": "chapter1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build-dev": "webpack --config ./webpack.config.js --mode development",
+    "build-prod": "webpack --config ./webpack.config.js --mode production"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.133",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "todomvc-app-css": "^2.2.0",
+    "todomvc-common": "^1.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.3",
+    "css-loader": "^2.1.1",
+    "express": "^4.17.1",
+    "extract-css-chunks-webpack-plugin": "^4.5.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "webpack": "^4.32.2",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.0"
+  }
+}
